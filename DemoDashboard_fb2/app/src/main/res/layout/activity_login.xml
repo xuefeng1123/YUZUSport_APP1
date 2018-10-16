@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout          xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text="YUZU SPORT"
+            android:textColor="@color/colorBlueJeansDark"
+            android:textSize="60dp"
+            android:layout_marginVertical="30dp"
+
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <include
+                android:id="@+id/input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="130dip"
+                layout="@layout/input_layout" />
+
+            <include
+                android:id="@+id/layout_progress"
+                android:layout_width="match_parent"
+                android:layout_height="130dip"
+                layout="@layout/layout_progress"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/main_btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="2dip"
+                android:text="登陆"
+                android:textColor="@color/colorBlueJeansDark"
+                android:textSize="25sp"
+                android:clickable="true"
+
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/signin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginVertical="10dp"
+            android:gravity="center"
+
+            android:text="新用户，点击注册"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

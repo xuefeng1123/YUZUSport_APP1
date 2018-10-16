@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cimageView"
+        android:layout_width="150dp"
+        android:layout_height="96dp"
+        app:srcCompat="@drawable/course_pic1" />
+
+    <TextView
+        android:id="@+id/cnameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/cimageView"
+        android:text="基础精讲·高效燃脂！"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cintroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cnameTxt"
+        android:layout_toEndOf="@+id/cimageView"
+        android:text="锻炼配合饮食全攻略，安全高效减脂"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cpriceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/cimageView"
+        android:layout_centerHorizontal="true"
+        android:text="¥18"
+        android:textColor="@color/colorGrapeFruit"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/clearnTxt"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cimageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:text="8 节课 / 3510 次学习"
+        android:textSize="12sp" />
+</RelativeLayout>
