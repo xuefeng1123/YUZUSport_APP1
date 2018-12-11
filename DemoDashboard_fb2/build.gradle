@@ -17,6 +17,11 @@ allprojects {
         google()
         maven { url 'https://maven.aliyun.com/repository/public' }
         jcenter()
+        maven {
+            url "https://s3.amazonaws.com/repo.commonsware.com"
+        }
+        //Bmob的maven仓库地址--必填
+        maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
     }
 }
 

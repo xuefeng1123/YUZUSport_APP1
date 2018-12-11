@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="204dp"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-<!--
+            <!--
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
@@ -27,13 +24,47 @@
                     android:text="YUZU SPORTS"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display2"></TextView>
--->
-                <!-- 主题图片 -->
-                <com.example.slideshowdemo.customview.SlideShowView
-                    android:id="@+id/slideshowView"
-                    android:layout_width="fill_parent"
-                    android:layout_height="180dp"
-                    android:layout_centerHorizontal="true" />
+                    -->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="bottom"
+                android:background="#33000000"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_pager_title"
+                    android:layout_width="0dp"
+                    android:layout_height="35dip"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dip"
+                    android:text="加载图片轮播失败"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:id="@+id/lineLayout_dot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center|right"
+                    android:orientation="horizontal"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"></LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
 
 
 
@@ -378,12 +409,10 @@
                 </LinearLayout>
 
 
-            </LinearLayout>
-        </ScrollView>
 
     </LinearLayout>
 
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
 
     <!--android:layout_alignParentBottom="true"-->
